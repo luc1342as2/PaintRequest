@@ -1,0 +1,80 @@
+<!-- index.html 
+Name= Lucas Ghigli
+Student number= 123456789
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lucas - Entry Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Assignment #2</h1>
+    <h2>Lucas Ghigli</h2>
+    <h3>123456789</h3>
+  </header>
+
+  <main>
+    <img src="Image/images.png" alt="Your Picture" class="sales-rep-image">
+    <form id="quote-form">
+      <label for="customer-name">
+        <span class="label-icon"><i class="fas fa-user"></i></span>
+        Customer's Name:
+      </label>
+      <input type="text" id="customer-name" placeholder="Enter customer's name" required>
+
+      <label for="customer-email">
+        <span class="label-icon"><i class="fas fa-envelope"></i></span>
+        Customer's Email:
+      </label>
+      <input type="email" id="customer-email" placeholder="Enter customer's email" required>
+
+      <label for="room-type">
+        <span class="label-icon"><i class="fas fa-home"></i></span>
+        Room to Paint:
+      </label>
+      <input type="text" id="room-type" placeholder="Enter room name" required>
+
+      <label for="room-width">
+        <span class="label-icon"><i class="fas fa-arrows-h"></i></span>
+        Width of the Room:
+      </label>
+      <input type="number" id="room-width" placeholder="Enter room width" required>
+
+      <label for="room-length">
+        <span class="label-icon"><i class="fas fa-arrows-v"></i></span>
+        Length of the Room:
+      </label>
+      <input type="number" id="room-length" placeholder="Enter room length" required>
+
+      <label for="color-box">
+        <span class="label-icon"><i class="fas fa-palette"></i></span>
+        Color:
+      </label>
+      <input type="color" id="color-box" required>
+
+      <label for="paint-type">
+        <span class="label-icon"><i class="fas fa-paint-roller"></i></span>
+        Paint Type:
+      </label>
+      <select id="paint-type">
+        <option value="standard">Standard Paint ($24.99 per can)</option>
+        <option value="premium">Premium Paint ($39.99 per can)</option>
+      </select>
+
+      <button type="submit">Create Quote</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>Lucas Ghigli / Sheridan College Trafalgar</p>
+  </footer>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+  <script src="script.js"></script>
+</body>
+</html>

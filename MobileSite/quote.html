@@ -1,0 +1,59 @@
+<!-- quote.html 
+ Name= Lucas Ghigli
+Student number= 123456789
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lucas - Quote Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Assignment #2</h1>
+    <h2>Lucas Ghigli</h2>
+    <h3>123456789</h3>
+  </header>
+
+  <main>
+    <img src="Image/images.png" alt="Your Picture" class="sales-rep-image">
+    <h2>Quote Details:</h2>
+    <p>Customer's Name: <span id="customer-name"></span></p>
+    <p>Customer's Email: <span id="customer-email"></span></p>
+    <p>Room to Paint: <span id="room-type"></span></p>
+    <p>Square Footage of the Room: <span id="square-footage"></span></p>
+    <p>Color:</p>
+    <div id="color-swatch"></div>
+    <p>Number of Paint Cans Needed: <span id="paint-cans"></span></p>
+    <p>Final Price (including 13% HST): <span id="final-price"></span></p>
+    <button type="submit" onclick="window.location.href = 'index.html'">Add New Entry</button>
+  </main>
+
+  <footer>
+    <p>Lucas Ghigli / Sheridan College Trafalgar</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    // Retrieve data from local storage
+    const customerName = localStorage.getItem('customerName');
+    const customerEmail = localStorage.getItem('customerEmail');
+    const roomType = localStorage.getItem('roomType');
+    const squareFootage = localStorage.getItem('squareFootage');
+    const colorBox = localStorage.getItem('colorBox');
+    const paintCans = localStorage.getItem('paintCans');
+    const finalPrice = localStorage.getItem('finalPrice');
+
+    // Display data on the quote page
+    document.getElementById('customer-name').textContent = customerName;
+    document.getElementById('customer-email').textContent = customerEmail;
+    document.getElementById('room-type').textContent = roomType;
+    document.getElementById('square-footage').textContent = squareFootage;
+    document.getElementById('color-swatch').style.backgroundColor = colorBox;
+    document.getElementById('paint-cans').textContent = paintCans;
+    document.getElementById('final-price').textContent = finalPrice;
+  </script>
+</body>
+</html>
